@@ -1,0 +1,39 @@
+#static {
+  background-color: rgb(14, 101, 178);
+  left: 150px;
+  position: static;
+}
+
+#relative {
+  background-color: rgb(147, 245, 117);
+  left: 150px;
+  position: relative;
+  top: 0px;
+  width: 300px;
+}
+
+#fixed {
+  background-color: rgb(147, 245, 117);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+}
+
+#absolute {
+  background-color: rgb(251, 197, 0);
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  left: 200px;
+  top: 800px;
+}
+
+#sticky {
+  background-color: rgb(196, 13, 13);
+  position: sticky;
+  width: 300px;
+  height: 200px;
+  top: 0px;
+  left: 200px;
+}

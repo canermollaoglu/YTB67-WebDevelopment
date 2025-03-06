@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tables</title>
+        <style>
+            /* https://www.w3schools.com/cssref/trysel.php */
+            * {
+                color: blue;
+            }
+
+            #ProductTable td,
+            th {
+                /* border-width: 3px;
+                border-style: solid;
+                border-color: red; */
+
+                border: 1px solid rgb(0, 0, 0);
+            }
+
+            #ProductTable {
+                border-collapse: collapse;
+                width: 100%;
+            }
+
+            #ProductTable th {
+                background-color: #565555;
+                color: white;
+            }
+
+            /* tablonun trlerinden cift olanları seçer */
+            #ProductTable tr:nth-child(even) {
+                background-color: #dddfe2;
+            }
+
+            #ProductTable tr:hover {
+                background-color: #5ed3fa;
+            }
+
+            #EducationData td,
+            th {
+                border: 1px solid red;
+            }
+
+            #EducationData {
+                border-collapse: seperat;
+            }
+        </style>
+    </head>
+
+    <body>
+        <table id="ProductTable">
+            <tr>
+                <th>Ürün Adı</th>
+                <th>Fiyatı</th>
+                <th>Adedi</th>
+            </tr>
+            <tr>
+                <td>Iphone 15 Pro Max</td>
+                <td>98.500 TL</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Iphone 10</td>
+                <td>48.500 TL</td>
+                <td>54</td>
+            </tr>
+            <tr>
+                <td>Iphone 15 Pro Max</td>
+                <td>98.500 TL</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Iphone 10</td>
+                <td>48.500 TL</td>
+                <td>54</td>
+            </tr>
+        </table>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Ürün Adı</th>
+                    <th>Fiyatı</th>
+                    <th>Adedi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Deneme 1</td>
+                    <td>Deneme 2</td>
+                    <td>Deneme 3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br><br><br><br>
+        <table id="EducationData">
+            <tr>
+                <th>Eğitim Programı</th>
+                <td 1>Full Stack Programming</td>
+                <td>300 Saat</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Katılımcılar</th>
+                <td>Ahmet</td>
+                <td>Aksakal</td>
+            </tr>
+            <tr>
+                <td>Ahmet</td>
+                <td>Aksakal</td>
+            </tr>
+        </table>
+        <br><br><br><br>
+        <table border="1">
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Yaş</th>
+            </tr>
+            <tr>
+                <td colspan="2">Caner Mollaoğlu</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td colspan="2">Caner Mollaoğlu</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td colspan="2">Caner Mollaoğlu</td>
+                <td>39</td>
+            </tr>
+            <tr>
+                <td colspan="2">Caner Mollaoğlu</td>
+                <td>39</td>
+            </tr>
+        </table>
+    </body>
+
+</html>

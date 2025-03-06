@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Css Grid Basis</title>
+        <style>
+            body {
+                margin: 0;
+            }
+
+            section {
+                /* içerik kadar yer kaplarlar. */
+                /* display: inline-grid; */
+                height: 600px;
+                background-color: aquamarine;
+                padding: 20px;
+                display: grid;
+                grid-template-rows: repeat(4, 120px);
+                /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+                /* grid-template-columns: 150px 200px 150px auto; */
+                /* grid-template-columns: auto auto 30%; */
+                grid-template-columns: repeat(4, auto);
+            }
+
+            .item {
+                background-color: rgb(22, 178, 126);
+                padding: 10px;
+                margin: 10px;
+                font-size: 24px;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <article class="item">item 1</article>
+            <article class="item">item 2</article>
+            <article class="item">item 3</article>
+            <article class="item">item 4</article>
+            <article class="item">item 5</article>
+            <article class="item">item 6</article>
+            <article class="item">item 7</article>
+            <article class="item">item 8</article>
+        </section>
+    </body>
+
+</html>

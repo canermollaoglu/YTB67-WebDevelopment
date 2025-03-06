@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flex Navigation</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                background-color: rgb(0, 233, 213);
+                padding: 0 20px;
+            }
+
+            .navigation {
+                display: flex;
+                list-style: none;
+            }
+
+            .navigation a {
+                display: block;
+            }
+
+            .navigation a:hover {
+                background-color: rgb(6, 138, 138);
+                color: black;
+            }
+
+            nav a {
+                color: rgb(0, 0, 0);
+                font-size: 20px;
+                padding: 16px;
+                text-decoration: none;
+                align-self: center;
+            }
+
+            .navigation li:last-child {
+                display: none;
+            }
+
+            @media(max-width:600px) {
+                nav {
+                    flex-direction: column;
+                }
+
+                .navigation {
+                    flex-direction: column;
+                }
+
+                .navigation a {
+                    text-align: center;
+                    padding: 10px;
+                    border-top: 1px solid rgb(6, 138, 138);
+                }
+
+                .navigation li:last-child {
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    right: 10px;
+                }
+
+                .responsive .navigation li:not(:last-child) {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <nav class="responsive">
+            <a href="Logo">İstanbul Eğitim Akademi</a>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="menu"><a href="#">
+                        <i class="fa fa-bars"></i>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <script>
+            document.querySelector(".menu").addEventListener("click", function () {
+                document.querySelector("nav").classList.toggle("responsive");
+            });
+        </script>
+    </body>
+
+</html>

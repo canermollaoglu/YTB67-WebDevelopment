@@ -1,0 +1,35 @@
+#title {
+  font-size: 20px;
+  color: #7f0303;
+}
+
+#first {
+  font-size: 10px;
+  color: #150368;
+}
+
+/* p {
+  font-size: 15px;
+  background-color: #000000;
+  color: white;
+} */
+
+#link {
+  background-color: aqua;
+}
+
+.sayfalink {
+  background-color: rgb(230, 13, 242);
+}
+
+#Soru {
+  font-size: 20px;
+  color: #7f0303;
+  background-color: bisque;
+}
+
+.Cevap {
+  font-size: 20px;
+  color: #ffffff;
+  background-color: rgb(31, 7, 97);
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grid Spanning</title>
+        <style>
+            section {
+                display: grid;
+                background-color: darkcyan;
+                grid-template-columns: repeat(5, 1fr);
+                row-gap: 10px;
+                column-gap: 10px;
+                height: 600px;
+                /* gap: 10px; */
+            }
+
+            .item {
+                background-color: rgb(255, 166, 106);
+                padding: 10px;
+                color: black;
+                font-size: 20px;
+            }
+
+            .item:first-child {
+                /* sutunları birleştir */
+
+                /* grid-column-start: 2;
+                grid-column-end: 5; */
+                /* grid-column-start: 1;
+                grid-column-end: 6; */
+
+                /* satırları birleştir */
+                /* grid-row-start: 1;
+                grid-row-end: 3; */
+
+
+                /* bunların yerine start ve endi birlikte tanımlayabiliriz. */
+                /* grid-column: 1/6; */
+                /* grid-column: 2/span 4; */
+                /* 2,3,4,5,6 */
+                /* grid-column: 2/4; */
+                /* 2,3 */
+                /* grid-row: 1/3; */
+                grid-area: 1/2/span 3/span 4;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section>
+            <article class="item">item 1</article>
+            <article class="item">item 2</article>
+            <article class="item">item 3</article>
+            <article class="item">item 4</article>
+            <article class="item">item 5</article>
+            <article class="item">item 6</article>
+            <article class="item">item 7</article>
+            <article class="item">item 8</article>
+        </section>
+    </body>
+
+</html>

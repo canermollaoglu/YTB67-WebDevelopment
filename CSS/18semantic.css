@@ -1,0 +1,67 @@
+header,
+nav,
+footer,
+section,
+aside {
+  border: 1px solid black;
+  /* top,bottom - left,right */
+  margin: 20px 0px;
+  padding: 15px;
+}
+
+body {
+  font-family: Poppins;
+  /* 16px *1.6=24px */
+  line-height: 1.6;
+}
+
+header {
+  background-color: rgb(19, 3, 118);
+  color: white;
+  text-align: center;
+}
+
+nav {
+  background-color: rgb(4, 201, 255);
+  color: rgb(249, 249, 249);
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a {
+  /* 1rem: (root em) Tarayıcı varsayılan boyutu anlamına gelir. Çoğu tarayıcıda 16pxtir. */
+  margin: 0px 1rem;
+  color: white;
+}
+
+nav a:hover {
+  color: red;
+}
+
+nav a:visited {
+  color: rgb(0, 0, 0);
+}
+
+article {
+  width: 60%;
+  /* background-color: rgb(122, 122, 121); */
+  float: left;
+}
+
+section {
+  background-color: rgb(250, 201, 116);
+  color: rgb(0, 0, 0);
+}
+
+aside {
+  width: 38%;
+  background-color: rgb(12, 175, 225);
+  float: left;
+  margin-left: 5px;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  background-color: orange;
+}

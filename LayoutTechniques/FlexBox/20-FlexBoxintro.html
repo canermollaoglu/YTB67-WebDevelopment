@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FlexBox Layout Model</title>
+        <link rel="stylesheet" href="/LayoutTechniques/FlexBox/css/style.css">
+    </head>
+
+    <body>
+        <h1>FlexBox Layout Model</h1>
+        <p>2017 yılında CSS'e eklenmiştir. Float, clear, position, display gibi özellikleri kullanarak yaptığımız
+            işlemleri daha kolay yapabilmeyi sağlar.</p>
+        <ul>
+            <li>Flexbox, esnek kutu düzeni modelinin kısaltmasıdır.</li>
+            <li>Öğeleri sadece satırlar ya da sadece sutunlar halinde düzenlemek için kullanılan bir yöntemdir.</li>
+            <li>Esas Amacı: menüler, araç çubukları, buton grupları gibi tek satırlık veya tek sutunluk içerikler için
+                idealdir.</li>
+            <li>Özellikle içeriklerin dinamik boyutlara göre değişebildiği durumlarda (responsive tasarımlar gibi)
+                kullanışlıdır.</li>
+            <li>Kullanım Amacı Farkı: Flexbox daha küçük ve tek satırlık düzenlerde hızlı cözümler sunar. CSS Grid ise
+                tüm sayfasının veya geniş bir düzenin yönetilmesini sağlar.</li>
+        </ul>
+
+        <h2>CSS FlexBox Components</h2>
+        <p>Bir flexbox 2 öğeden oluşur:</p>
+        <ul>
+            <li>Flex Container</li>
+            <li>Flex Items</li>
+        </ul>
+
+        <br><br><br>
+        <div class="flex-container">
+            <div class="flex-item">1</div>
+            <div class="flex-item">2</div>
+            <div class="flex-item">3</div>
+            <div class="flex-item">4</div>
+            <div class="flex-item">5</div>
+            <!-- <div class="flex-item">6</div>
+            <div class="flex-item">7</div>
+            <div class="flex-item">8</div>
+            <div class="flex-item">9</div>
+            <div class="flex-item">10</div>
+            <div class="flex-item">11</div>
+            <div class="flex-item">12</div> -->
+        </div>
+
+        <!-- display: flex; -->
+
+        <h2>FlexContainer için Kullanılan Özellikler</h2>
+        <ul>
+            <li>Flex-Direction
+                <p>Elemanların sıralanma yönünü belirtir.</p>
+                <ul>
+                    <li>row</li>
+                    <li>row-reverse</li>
+                    <li>column</li>
+                    <li>column-reverse</li>
+                </ul>
+            </li><br>
+            <li>Flex-Wrap
+                <p>Herbir flex eleman container kısaldığında alt satıra geçer.</p>
+                <ul>
+                    <li>nowrap</li>
+                    <li>wrap</li>
+                    <li>wrap-reverse</li>
+                </ul>
+            </li>
+            <br>
+            <li>Flex-Flow
+                <p>Hem Flex-Direction hem de Flex-Wrap özelliklerini ayarlamak için kullanılan bir kısaltma özelliğidir.
+                </p>
+                <ul>
+                    <li>row wrap</li>
+                </ul>
+            </li>
+            <br>
+            <li>Justify-Content (Yatay Hizalama)
+                <p>Flex elemanların container içinde nasıl hizalayacağını belirler.</p>
+                <ul>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>center</li>
+                    <li>space-between</li>
+                    <li>space-around</li>
+                </ul>
+            </li>
+            <br>
+            <li>Align Items (Dikey Hizalama) / Align Content
+                <p>Flex elemanların container içinde dikeyde nasıl hizalanacağını belirler. Default olarak strech'dir.
+                </p>
+                <ul>
+                    <li>stretch</li>
+                    <li>flex-start</li>
+                    <li>flex-end</li>
+                    <li>center</li>
+                    <li>baseline</li>
+                    <li>normal</li>
+                </ul>
+            </li>
+        </ul>
+
+
+
+
+
+
+    </body>
+
+</html>
